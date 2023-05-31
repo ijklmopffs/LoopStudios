@@ -1,0 +1,245 @@
+body {
+  font-family: "Alata", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+}
+
+header {
+  background-image: url(./images/desktop/image-hero.jpg);
+  height: 90vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+.links a {
+  color: white;
+  text-decoration: none;
+}
+.links a + a {
+  margin-left: 20px;
+}
+.head {
+  position: relative;
+  top: 30%;
+  left: 15%;
+  width: 300px;
+}
+.head h1 {
+  width: 300px;
+  padding: 30px;
+  padding-right: 60px;
+  border: 1px solid white;
+  color: white;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+.one {
+  margin-top: 100px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.one img {
+  width: 500px;
+}
+.one p {
+  width: 330px;
+}
+.text {
+  position: relative;
+  right: 10%;
+  bottom: 40%;
+  background-color: white;
+  padding: 20px;
+}
+.text h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  width: 300px;
+  font-weight: 400;
+}
+.two {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.two_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-left: 100px;
+  margin-right: 50px;
+}
+.two_header h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 500;
+}
+.two_header button {
+  padding: 5px 15px;
+  background-color: transparent;
+  border: 1px solid black;
+  text-transform: uppercase;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-left: 100px;
+}
+.cards h2 {
+  position: relative;
+  bottom: 15%;
+  margin: 15px;
+  font-size: 30px;
+  font-weight: 300;
+  width: 180px;
+}
+.card_one {
+  flex-basis: 25%;
+}
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a + a {
+  margin-left: 20px;
+}
+.footer_links,
+.footer_trademark {
+  margin-top: 50px;
+}
+.footer_images img {
+  width: 15px;
+  height: 15px;
+}
+.footer_images img + img {
+  margin-left: 20px;
+}
+.mobile {
+  display: none;
+}
+.hamburger {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  header {
+    background-image: url(./images/mobile/image-hero.jpg);
+    width: 100%;
+  }
+  .head {
+    left: 3%;
+  }
+  .navbar {
+    justify-content: space-between;
+    z-index: 1;
+  }
+  .links.active {
+    display: flex;
+  }
+  .links {
+    display: none;
+    position: absolute;
+    width: 87%;
+    height: 90%;
+    left: 1%;
+    top: -1%;
+    background-color: black;
+    flex-direction: column;
+    align-items: start;
+    align-self: flex-end;
+    justify-content: center;
+    padding: 0 24px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    z-index: -1;
+    font-size: 30px;
+  }
+  .links a + a {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  .one {
+    flex-direction: column;
+  }
+  .one img {
+    width: 100%;
+  }
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  .text {
+    text-align: center;
+  }
+  .text h2 {
+    text-align: start;
+  }
+  .one p {
+    width: 220px;
+    letter-spacing: 1px;
+  }
+  .two {
+    margin-top: 50px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cards {
+    flex-direction: column;
+    margin-left: 0;
+    color: black;
+  }
+  .cards h2 {
+    bottom: 25%;
+  }
+  .card_one img {
+    width: 100%;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .footer_links a + a {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .footer_images {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .two_header {
+    flex-direction: column;
+  }
+  .hamburger {
+    display: block;
+  }
+}
