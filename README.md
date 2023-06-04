@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/ijklmopffs/LoopStudios)
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://loopstudio-landing-page-new.netlify.app/)
 
 ## My process
 

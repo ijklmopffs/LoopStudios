@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Alata", sans-serif;
   font-family: "Josefin Sans", sans-serif;
@@ -31,7 +37,7 @@ header {
   width: 300px;
 }
 .head h1 {
-  width: 300px;
+  width: 395px;
   padding: 30px;
   padding-right: 60px;
   border: 1px solid white;
@@ -47,7 +53,7 @@ header {
   justify-content: center;
 }
 .one img {
-  width: 500px;
+  width: 600px;
 }
 .one p {
   width: 330px;
@@ -66,7 +72,7 @@ header {
   font-weight: 400;
 }
 .two {
-  margin-top: 200px;
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
 }
@@ -75,8 +81,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  margin-left: 100px;
-  margin-right: 50px;
+  margin-left: 70px;
+  margin-right: 57px;
 }
 .two_header h2 {
   text-transform: uppercase;
@@ -96,7 +102,7 @@ header {
   text-transform: uppercase;
   flex-wrap: wrap;
   padding: 10px;
-  margin-left: 100px;
+  margin-left: 70px;
 }
 .cards h2 {
   position: relative;
@@ -158,7 +164,7 @@ footer a + a {
   .links {
     display: none;
     position: absolute;
-    width: 87%;
+    width: 90%;
     height: 90%;
     left: 1%;
     top: -1%;
@@ -192,12 +198,10 @@ footer a + a {
   .text {
     text-align: center;
   }
-  .text h2 {
-    text-align: start;
-  }
   .one p {
     width: 220px;
     letter-spacing: 1px;
+    margin-inline: auto;
   }
   .two {
     margin-top: 50px;
@@ -238,6 +242,7 @@ footer a + a {
   }
   .two_header {
     flex-direction: column;
+    margin-left: 50px;
   }
   .hamburger {
     display: block;
